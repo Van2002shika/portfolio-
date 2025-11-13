@@ -1,0 +1,500 @@
+body,
+html {
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sidebar (centered vertically, icons only) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100vh;
+  background: #0d0d0d;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  color: #bbb;
+  font-size: 1.5rem;
+  margin: 18px 0;
+  transition: 0.3s;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  border-left: 3px solid transparent;
+}
+
+.nav-icon:hover {
+  color: #ff6f00;
+  transform: scale(1.2);
+}
+
+.nav-icon.active {
+  color: #ff6f00;
+  border-left: 3px solid #ff6f00;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 70px;
+  background-color: #111;
+  min-height: 100vh;
+}
+
+/* Portfolio Layout */
+.portfolio-container {
+  min-height: 100vh;
+  background-color: #111;
+}
+
+.profile-card {
+  width: 80%;
+  max-width: 1000px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  transform: scale(0.96);
+  opacity: 0;
+  animation: fadeInHome 1s ease forwards;
+}
+
+@keyframes fadeInHome {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Animated section fade */
+.animate-section {
+  animation: fadeSection 0.8s ease;
+}
+
+@keyframes fadeSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left-section {
+  flex: 1;
+  background: linear-gradient(180deg, #ff4500, #ff6f00);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.photo-wrapper {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #111;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.right-section {
+  flex: 1.5;
+  padding: 3rem;
+}
+
+.btn-warning {
+  background-color: #ff6f00;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+.btn-outline-warning {
+  border: 2px solid #ff6f00;
+  border-radius: 25px;
+  color: #ff6f00;
+  padding: 10px 25px;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ff6f00;
+  color: #000;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  display: inline-block;
+  border-right: 3px solid #ff6f00;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.8s step-end infinite;
+  color: #ff6f00;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.nav-tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: #0d0d0d;
+  border-right: 2px solid #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Remove Bootstrap default border and background */
+.nav-tabs .nav-item {
+  border: none;
+  margin: 10px 0;
+}
+
+.nav-tabs .nav-link {
+  background: transparent;
+  border: none;
+  color: #bbb;
+  font-size: 1.6rem;
+  padding: 15px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  border-radius: 0;
+}
+
+/* Hover and active effects */
+.nav-tabs .nav-link:hover {
+  color: #ff6f00;
+  transform: scale(1.2);
+}
+
+.nav-tabs .nav-link.active {
+  color: #ff6f00;
+  border-left: 3px solid #ff6f00;
+}
+
+/* Remove focus outline */
+.nav-tabs .nav-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Tab content area */
+.tab-content {
+  margin-left: 80px;
+  background-color: #111;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Smooth fade-in animation for each tab */
+.tab-pane {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Example: Add orange highlight line on hover */
+.nav-tabs .nav-link:hover i {
+  text-shadow: 0 0 10px #ff6f00;
+}
+/* About Section Background */
+.about-section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+  animation: fadeInAbout 1s ease;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+/* About Cards */
+.about-card {
+  background-color: rgba(26, 26, 26, 0.85);
+  border-radius: 15px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 111, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff6f00;
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.5);
+}
+
+/* Skill Cards */
+.skill-card {
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 10px;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+  color: #ccc;
+}
+
+.skill-card:hover {
+  background-color: rgba(255, 111, 0, 0.15);
+  border-color: #ff6f00;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeInAbout {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Text Colors */
+.text-secondary {
+  color: #aaa !important;
+}
+
+/* Education Cards */
+.edu-card {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 15px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 111, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+.edu-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff6f00;
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.6);
+}
+
+/* Experience Cards */
+.exp-card {
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 111, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+.exp-card:hover {
+  border-color: #ff6f00;
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.5);
+}
+
+/* Certificates */
+.cert-img-card {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 111, 0, 0.2);
+  transition: 0.3s ease;
+}
+.cert-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+.cert-img-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+  border-radius: 12px;
+}
+.cert-img-card:hover .cert-overlay {
+  opacity: 1;
+}
+/* Skills Icons Row */
+.skills-icons {
+  animation: fadeInSkills 1s ease;
+}
+@keyframes fadeInSkills {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: #bbb;
+  transition: all 0.3s ease;
+  font-size: 1.8rem;
+}
+.skill-icon:hover {
+  color: #ff6f00;
+  border-color: #ff6f00;
+  box-shadow: 0 0 15px rgba(255, 111, 0, 0.5);
+  transform: scale(1.1);
+}
+.skill-icon p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scroll-link:hover {
+  color: #fff;
+}
+/* Scroll Down Arrow */
+.scroll-down {
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+.scroll-link {
+  font-size: 2.2rem;
+  color: #ff6f00;
+  text-decoration: none;
+  display: inline-block;
+  animation: jumpArrow 1.4s infinite ease-in-out;
+  transition: color 0.3s ease;
+}
+
+.scroll-link:hover {
+  color: #fff;
+}
+
+/* Jumping / Bouncing Arrow Animation */
+@keyframes jumpArrow {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.edu-card {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 111, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.edu-card.expanded {
+  height: auto;
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.6);
+}
+
+.edu-card .edu-content {
+  max-height: 130px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.edu-card.expanded .edu-content {
+  max-height: 1000px;
+}
+
+.toggle-btn {
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 4px 14px;
+  transition: 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #ff6f00;
+  color: #000;
+  border-color: #ff6f00;
+}
