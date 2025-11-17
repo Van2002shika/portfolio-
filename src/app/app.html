@@ -44,6 +44,20 @@
         <i class="fa-solid fa-briefcase"></i>
       </button>
     </li>
+    <li class="nav-item" role="contact">
+      <button
+        class="nav-link"
+        id="contact-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#contact"
+        type="button"
+        role="tab"
+        aria-controls="contact"
+        aria-selected="false"
+      >
+        <i class="fa-solid fa-briefcase"></i>
+      </button>
+    </li>
   </ul>
 </div>
 
@@ -51,7 +65,9 @@
 <div class="main-content tab-content" id="myTabContent">
   <!-- Home -->
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <div class="portfolio-container d-flex align-items-center justify-content-center text-light">
+    <div
+      class="portfolio-container mt-5 d-flex align-items-center justify-content-center text-light"
+    >
       <div class="profile-card d-flex flex-wrap animate-home">
         <!-- Left -->
         <div
@@ -202,14 +218,13 @@
         </div>
 
         <!-- Education Section -->
-        <!-- Education Section -->
         <div class="education-section mt-5" id="education">
           <h3 class="text-warning fw-bold text-center mb-4">
             <i class="fa-solid fa-graduation-cap me-2"></i> Education
           </h3>
 
           <div class="row g-4 justify-content-center">
-            <!-- MBA -->
+            <!-- MBA Card -->
             <div class="col-md-4">
               <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[0]">
                 <i class="fa-solid fa-user-tie fa-2x text-warning mb-3"></i>
@@ -218,12 +233,20 @@
                   Prestige Institute of Management & Research, Gwalior
                 </p>
                 <p class="text-muted small">2025 – 2027</p>
+
                 <div class="edu-content">
                   <p class="text-light small">
-                    Specializing in management and leadership with focus on business strategy,
-                    innovation, and data-driven decision making.
+                    {{
+                      expandedCards[0]
+                        ? 'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.'
+                        : trimText(
+                            'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.',
+                            85
+                          )
+                    }}
                   </p>
                 </div>
+
                 <button
                   class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
                   (click)="toggleCard(0)"
@@ -233,28 +256,42 @@
               </div>
             </div>
 
-            <!-- Full Stack Bootcamp -->
+            <!-- Bootcamp Card -->
             <div class="col-md-4">
               <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[1]">
                 <i class="fa-solid fa-laptop-code fa-2x text-warning mb-3"></i>
-                <h5 class="fw-bold text-white">Online Full Stack Web Development Bootcamp</h5>
+                <h5 class="fw-bold text-white">Full Stack Web Development Bootcamp</h5>
                 <p class="text-secondary mb-1">Internshala, Online</p>
                 <p class="text-muted small">2023 – 2025</p>
+
                 <div class="edu-content">
-                  <ul class="text-light small text-start mt-2">
-                    <li>Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.</li>
+                  <!-- Always show first line (trimmed when collapsed) -->
+                  <ul class="text-light small text-start">
                     <li>
+                      {{
+                        expandedCards[1]
+                          ? 'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.'
+                          : trimText(
+                              'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.',
+                              70
+                            )
+                      }}
+                    </li>
+
+                    <!-- Show these ONLY when expanded -->
+                    <li *ngIf="expandedCards[1]">
                       Built real-world projects like e-commerce, task manager, weather, and chat
                       apps.
                     </li>
-                    <li>
-                      Developed RESTful APIs and responsive designs with Bootstrap & Tailwind CSS.
+                    <li *ngIf="expandedCards[1]">
+                      Developed RESTful APIs and responsive UI using Bootstrap & Tailwind CSS.
                     </li>
-                    <li>
-                      Worked with Git/GitHub for version control, deployed using Netlify & Render.
+                    <li *ngIf="expandedCards[1]">
+                      Worked with Git/GitHub and deployed apps on Render & Netlify.
                     </li>
                   </ul>
                 </div>
+
                 <button
                   class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
                   (click)="toggleCard(1)"
@@ -264,19 +301,27 @@
               </div>
             </div>
 
-            <!-- B.Sc -->
+            <!-- B.Sc Card -->
             <div class="col-md-4">
               <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[2]">
                 <i class="fa-solid fa-building-columns fa-2x text-warning mb-3"></i>
                 <h5 class="fw-bold text-white">B.Sc in Computer Science</h5>
                 <p class="text-secondary mb-1">Jiwaji University, Gwalior</p>
                 <p class="text-muted small">2019 – 2022</p>
+
                 <div class="edu-content">
                   <p class="text-light small">
-                    Focused on programming fundamentals, database management, and software
-                    development principles.
+                    {{
+                      expandedCards[2]
+                        ? 'Focused on programming fundamentals, database management, and software development principles.'
+                        : trimText(
+                            'Focused on programming fundamentals, database management, and software development principles.',
+                            90
+                          )
+                    }}
                   </p>
                 </div>
+
                 <button
                   class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
                   (click)="toggleCard(2)"
@@ -333,25 +378,27 @@
             <div class="col-md-3 col-6">
               <div class="cert-img-card position-relative">
                 <img
-                  src="https://i.ibb.co/0cCV0yH/certificate1.jpg"
+                  src="Internshala-Trainings-11-17-2025_10_33_PM.png"
                   alt="Full Stack Certificate"
                   class="img-fluid rounded shadow"
                 />
                 <div class="cert-overlay">
                   <a
-                    href="https://i.ibb.co/0cCV0yH/certificate1.jpg"
+                    href="https://trainings.internshala.com/certificate/view/nsdc/blxnze3k4jm/dha12verb2s/"
                     target="_blank"
                     class="btn btn-warning btn-sm fw-bold"
                     >View</a
                   >
                 </div>
               </div>
-              <p class="text-center text-secondary mt-2">Full Stack Web Development – Coursera</p>
+              <p class="text-center text-secondary mt-2">
+                Full Stack Web Development – Internshala
+              </p>
             </div>
             <div class="col-md-3 col-6">
               <div class="cert-img-card position-relative">
                 <img
-                  src="https://i.ibb.co/XpNPV6t/certificate2.jpg"
+                  src="internship ubitech.jpg"
                   alt="JavaScript Mastery"
                   class="img-fluid rounded shadow"
                 />
@@ -364,27 +411,7 @@
                   >
                 </div>
               </div>
-              <p class="text-center text-secondary mt-2">JavaScript Mastery – Udemy</p>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="cert-img-card position-relative">
-                <img
-                  src="https://i.ibb.co/VHnXcdP/certificate3.jpg"
-                  alt="Node.js Certificate"
-                  class="img-fluid rounded shadow"
-                />
-                <div class="cert-overlay">
-                  <a
-                    href="https://i.ibb.co/VHnXcdP/certificate3.jpg"
-                    target="_blank"
-                    class="btn btn-warning btn-sm fw-bold"
-                    >View</a
-                  >
-                </div>
-              </div>
-              <p class="text-center text-secondary mt-2">
-                Node.js API Development – Google SkillBoost
-              </p>
+              <p class="text-center text-secondary mt-2">Web Development – Ubitech Solutions</p>
             </div>
           </div>
         </div>
@@ -394,43 +421,154 @@
 
   <!-- Hire Me -->
   <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-    <div class="container text-light py-5 animate-section">
-      <h2 class="text-warning"><i class="fa-solid fa-briefcase me-2"></i> Hire Me</h2>
-      <p class="text-secondary mt-3">
-        Looking for a reliable developer? I’m open to freelance, full-time, or remote opportunities
-        in web development.
+    <div class="portfolio-section" id="portfolio">
+      <h2 class="text-warning fw-bold text-center mb-4">
+        <i class="fa-solid fa-briefcase me-2"></i> My Portfolio
+      </h2>
+
+      <p class="text-center text-light mb-5 px-3">
+        Here are some of the real-world projects I built using modern frontend & backend
+        technologies. I love creating clean, responsive, and functional web applications.
       </p>
 
-      <form class="mt-4" style="max-width: 600px">
-        <div class="mb-3">
-          <input
-            type="text"
-            class="form-control bg-dark text-light border-0"
-            placeholder="Your Name"
-            required
-          />
+      <div class="row g-4 justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="project-card p-3">
+            <img src="assets/portfolio/ecommerce.jpg" class="project-img" alt="" />
+            <h5 class="text-white mt-3">E-Commerce Website</h5>
+            <p class="text-secondary small">
+              Full-stack e-commerce app with cart, auth, admin panel & payment integration.
+            </p>
+
+            <div class="d-flex justify-content-between mt-3">
+              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
+              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control bg-dark text-light border-0"
-            placeholder="Your Email"
-            required
-          />
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="project-card p-3">
+            <img src="assets/portfolio/taskapp.jpg" class="project-img" alt="" />
+            <h5 class="text-white mt-3">Task Manager App</h5>
+            <p class="text-secondary small">
+              MERN-based task management app with user login & cloud sync.
+            </p>
+
+            <div class="d-flex justify-content-between mt-3">
+              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
+              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <textarea
-            class="form-control bg-dark text-light border-0"
-            rows="4"
-            placeholder="Your Message"
-          ></textarea>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div class="project-card p-3">
+            <img src="assets/portfolio/weatherapp.jpg" class="project-img" alt="" />
+            <h5 class="text-white mt-3">Weather App</h5>
+            <p class="text-secondary small">
+              API-based weather forecasting app built with Angular & Bootstrap.
+            </p>
+
+            <div class="d-flex justify-content-between mt-3">
+              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
+              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-warning fw-bold px-4">
-          <i class="fa-solid fa-paper-plane me-2"></i>Send
-        </button>
-      </form>
+      </div>
+
+      <!-- Hire Me Banner -->
+      <div class="hire-banner text-center mt-5 p-4">
+        <h3 class="text-white mb-3">Want to Work With Me?</h3>
+        <p class="text-secondary mb-4">
+          I’m open for freelance projects, internships, and full-time opportunities.
+        </p>
+        <a href="mailto:yourmail@gmail.com" class="btn btn-warning px-4 py-2">
+          Hire Me <i class="fa-solid fa-arrow-right ms-2"></i>
+        </a>
+      </div>
     </div>
   </div>
+
+  <!-- Hire Me -->
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="contact-section" id="contact">
+      <h2 class="text-warning fw-bold text-center mb-4">
+        <i class="fa-solid fa-envelope-open-text me-2"></i> Contact Me
+      </h2>
+
+      <p class="text-center text-light mb-5 px-3 intro-text">
+        I love connecting with new people! Whether you have a project, an idea, or just want to say
+        hello — feel free to reach out. I'm always open to opportunities.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Email -->
+        <div class="col-md-3">
+          <div class="contact-card text-center p-4">
+            <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
+            <h5 class="text-white">Email</h5>
+            <p class="text-secondary small">amanatsingh872001@gmail.com</p>
+            <a
+              href="mailto:amanatsingh872001@gmail.com"
+              class="btn btn-outline-warning btn-sm mt-2"
+            >
+              Send Mail
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-md-3">
+          <div class="contact-card text-center p-4">
+            <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
+            <h5 class="text-white">Phone</h5>
+            <p class="text-secondary small">+91 8839167579</p>
+            <a href="tel:+919876543210" class="btn btn-outline-warning btn-sm mt-2"> Call Me </a>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="col-md-3">
+          <div class="contact-card text-center p-4">
+            <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
+            <h5 class="text-white">Location</h5>
+            <p class="text-secondary small">Gwalior, India</p>
+            <a class="btn btn-outline-warning btn-sm mt-2" target="_blank"> View Map </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons text-center mt-5">
+        <a class="social-icon" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="social-icon" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a class="social-icon" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="custom-footer mt-5">
+    <div class="container text-center py-3">
+      <h5 class="footer-title mb-1">Thanks for visiting my portfolio!</h5>
+
+      <div class="footer-social">
+        <a href="#" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="footer-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="footer-icon"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 </div>
 
 <router-outlet />

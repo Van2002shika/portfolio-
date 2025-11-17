@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -32,9 +33,15 @@ export class App {
       setTimeout(() => this.typeWriter(), 100);
     }
   }
-  expandedCards: boolean[] = [false, false, false];
+  expandedCards = [false, false, false];
 
-  toggleCard(index: number): void {
-    this.expandedCards[index] = !this.expandedCards[index];
+  // helper to slice text
+  trimText(text: string, limit: number) {
+    return text.length > limit ? text.substring(0, limit) + '...' : text;
+  }
+
+  // toggle expansion
+  toggleCard(i: number) {
+    this.expandedCards[i] = !this.expandedCards[i];
   }
 }

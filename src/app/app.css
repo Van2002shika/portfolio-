@@ -48,10 +48,15 @@ html {
   background-color: #111;
   min-height: 100vh;
 }
-
+.tab-pane {
+  height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: inherit;
+}
 /* Portfolio Layout */
 .portfolio-container {
-  min-height: 100vh;
   background-color: #111;
 }
 
@@ -349,6 +354,7 @@ html {
   border-radius: 12px;
   border: 2px solid rgba(255, 111, 0, 0.2);
   transition: 0.3s ease;
+  height: 200px;
 }
 .cert-img-card img {
   width: 100%;
@@ -463,10 +469,9 @@ html {
 .edu-card {
   background: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
-  border: 1px solid rgba(255, 111, 0, 0.2);
+  border: 1px solid rgba(255, 111, 0, 0.25);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  height: 360px;
-  position: relative;
+  height: 330px;
   overflow: hidden;
   transition: all 0.4s ease;
 }
@@ -476,14 +481,14 @@ html {
   box-shadow: 0 0 25px rgba(255, 111, 0, 0.6);
 }
 
-.edu-card .edu-content {
-  max-height: 130px;
+.edu-content {
+  max-height: 120px;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
 
 .edu-card.expanded .edu-content {
-  max-height: 1000px;
+  max-height: 2000px;
 }
 
 .toggle-btn {
@@ -497,4 +502,166 @@ html {
   background-color: #ff6f00;
   color: #000;
   border-color: #ff6f00;
+}
+
+.portfolio-section {
+  padding: 30px 0;
+  background-color: #0d0d0d;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(25, 25, 25, 0.85);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 111, 0, 0.15);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff6f00;
+  box-shadow: 0 0 20px rgba(255, 111, 0, 0.5);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #ff6f00 !important;
+  border: none;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ff6f00;
+  color: #000 !important;
+}
+
+/* Hire Me Banner */
+.hire-banner {
+  background: rgba(255, 111, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 111, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.hire-banner:hover {
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.4);
+}
+.contact-section {
+  padding: 30px 0;
+  background-color: #0d0d0d;
+  position: relative;
+}
+
+/* Floating Cards */
+.contact-card {
+  background: rgba(25, 25, 25, 0.85);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 111, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff6f00;
+  box-shadow: 0 0 20px rgba(255, 111, 0, 0.5);
+}
+
+/* Text animation */
+.intro-text {
+  animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #ff6f00;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+  text-shadow: 0 0 15px #ff6f00;
+}
+
+/* Hire Me Banner */
+.hire-banner {
+  background: rgba(255, 111, 0, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 111, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.hire-banner:hover {
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.4);
+}
+
+.btn-warning {
+  background-color: #ff6f00 !important;
+  border: none;
+}
+/* Footer */
+.custom-footer {
+  background: #0d0d0d;
+  border-top: 1px solid rgba(255, 111, 0, 0.3);
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
+  margin-left: 80px; /* because of sidebar width */
+}
+
+.footer-title {
+  color: #ff6f00;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  color: #bbb;
+  transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #ff6f00;
+  transform: scale(1.2);
+  text-shadow: 0 0 12px rgba(255, 111, 0, 0.7);
+}
+
+.footer-copy {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer-copy .brand {
+  color: #ff6f00;
+  font-weight: 600;
 }
