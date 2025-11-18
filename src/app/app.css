@@ -1,6 +1,6 @@
 body,
 html {
-  background-color: #000;
+  background-color: #000000;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -259,8 +259,8 @@ html {
 /* About Section Background */
 .about-section {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80')
-    center/cover no-repeat;
+  /* background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat; */
   min-height: 100vh;
   overflow: hidden;
   animation: fadeInAbout 1s ease;
@@ -629,7 +629,6 @@ html {
   background: #0d0d0d;
   border-top: 1px solid rgba(255, 111, 0, 0.3);
   box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
-  margin-left: 80px; /* because of sidebar width */
 }
 
 .footer-title {
