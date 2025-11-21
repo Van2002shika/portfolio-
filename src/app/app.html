@@ -55,507 +55,484 @@
         aria-controls="contact"
         aria-selected="false"
       >
-           <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-envelope"></i>
       </button>
     </li>
   </ul>
 </div>
 
 <!-- Main Tab Content -->
-<div class="main-content tab-content" id="myTabContent">
-  <!-- Home -->
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <div
-      class="portfolio-container mt-5 d-flex align-items-center justify-content-center text-light"
-    >
-      <div class="profile-card d-flex flex-wrap animate-home">
-        <!-- Left -->
-        <div
-          class="left-section d-flex flex-column align-items-center justify-content-center text-center"
-        >
-          <div class="photo-wrapper">
-            <img src="https://i.ibb.co/kQ6k7Zz/profile-pic.png" alt="Profile" class="profile-pic" />
+<div class="wrapper">
+  <div class="main-content tab-content" id="myTabContent">
+    <!-- Home -->
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div
+        class="portfolio-container mt-5 d-flex align-items-center justify-content-center text-light"
+      >
+        <div class="profile-card mt-5 d-flex flex-wrap animate-home">
+          <!-- Left -->
+          <div
+            class="left-section d-flex flex-column align-items-center justify-content-center text-center"
+          >
+            <div class="photo-wrapper">
+              <img src="123931587.jpg" alt="Profile" class="profile-pic" />
+            </div>
           </div>
-          <div class="social-icons mt-4">
-            <a href="https://www.linkedin.com/in/amanat-singh-bhadouriya-b070b5261/" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/Amanat038" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
 
-        <!-- Right -->
-        <div class="right-section d-flex flex-column justify-content-center px-5">
-          <h5 class="text-uppercase text-secondary">Full Stack Developer</h5>
-          <h1 class="fw-bold text-white mb-3 typewriter">{{ displayedText }}</h1>
-          <p class="text-secondary">
-            Passionate developer with hands-on experience in React.js, Node.js, MongoDB, and
-            Bootstrap. I love creating clean, efficient, and interactive web applications that make
-            an impact.
-          </p>
+          <!-- Right -->
+          <div class="right-section d-flex flex-column justify-content-center px-5">
+            <h5 class="text-uppercase text-secondary">Full Stack Developer</h5>
+            <h1 class="fw-bold text-white mb-3 typewriter">{{ displayedText }}</h1>
+            <p class="text-secondary">
+              Passionate developer with hands-on experience in React.js, Node.js, MongoDB, and
+              Bootstrap. I love creating clean, efficient, and interactive web applications that
+              make an impact.
+            </p>
 
-          <div class="mt-4">
-            <a href="assets/Amanat_Singh_CV.pdf" download class="btn btn-outline-warning me-3"
-              >Download CV</a
-            >
-            <a
-              class="btn btn-warning text-dark fw-bold"
-              id="hire-tab-btn"
-              data-bs-toggle="tab"
-              data-bs-target="#hire"
-              >Hire Me</a
-            >
+            <div class="mt-4">
+              <a href="amanat_singh_resume.pdf" download class="btn btn-outline-warning me-3"
+                >Download CV</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <section class="about-section text-light">
-      <div class="about-overlay"></div>
-      <div class="container position-relative py-5">
-        <!-- Heading -->
-        <div class="text-center mb-5">
-          <h2 class="fw-bold text-warning">About Me</h2>
-          <p class="text-secondary">
-            Discover my background, education, experience, and certifications.
-          </p>
-        </div>
-
-        <!-- Info Cards -->
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="about-card p-4 text-center">
-              <div class="icon mb-3"><i class="fa-solid fa-user fa-2x text-warning"></i></div>
-              <h5 class="fw-bold text-white">Who I Am</h5>
-              <p class="text-secondary mt-2">
-                I’m <strong class="text-warning">Amanat Singh Bhadouriya</strong>, a Full Stack
-                Developer passionate about designing creative and functional web experiences.
-              </p>
-            </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <section class="about-section text-light">
+        <div class="about-overlay"></div>
+        <div class="container position-relative py-5">
+          <!-- Heading -->
+          <div class="text-center mb-5">
+            <h2 class="fw-bold text-warning">About Me</h2>
+            <p class="text-secondary">
+              Discover my background, education, experience, and certifications.
+            </p>
           </div>
 
-          <div class="col-md-4">
-            <div class="about-card p-4 text-center">
-              <div class="icon mb-3">
-                <i class="fa-solid fa-laptop-code fa-2x text-warning"></i>
-              </div>
-              <h5 class="fw-bold text-white">What I Do</h5>
-              <p class="text-secondary mt-2">
-                I work with <strong>Angular, React, Node.js</strong>, and
-                <strong>MongoDB</strong> to develop fast, scalable, and user-focused applications.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="about-card p-4 text-center">
-              <div class="icon mb-3"><i class="fa-solid fa-bullseye fa-2x text-warning"></i></div>
-              <h5 class="fw-bold text-white">My Goal</h5>
-              <p class="text-secondary mt-2">
-                To build a rewarding career in software development and continuously grow through
-                learning and innovation.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills Icons Row -->
-        <div class="skills-icons text-center mt-5">
-          <h4 class="text-warning mb-4"><i class="fa-solid fa-code me-2"></i> Technical Skills</h4>
-          <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-            <div class="skill-icon">
-              <i class="fa-brands fa-html5"></i>
-              <p>HTML5</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-css3-alt"></i>
-              <p>CSS3</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-js"></i>
-              <p>JavaScript</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-angular"></i>
-              <p>Angular</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-react"></i>
-              <p>React</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-node-js"></i>
-              <p>Node.js</p>
-            </div>
-
-            <div class="skill-icon">
-              <i class="fa-solid fa-database"></i>
-              <p>MongoDB</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-solid fa-database"></i>
-              <p>MySQL</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-git-alt"></i>
-              <p>Git</p>
-            </div>
-            <div class="skill-icon">
-              <i class="fa-brands fa-github"></i>
-              <p>GitHub</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Scroll Down Arrow -->
-        <div class="scroll-down text-center mt-5">
-          <a href="#education" class="scroll-link text-warning">
-            <i class="fa-solid fa-angles-down"></i>
-          </a>
-        </div>
-
-        <!-- Education Section -->
-        <div class="education-section mt-5" id="education">
-          <h3 class="text-warning fw-bold text-center mb-4">
-            <i class="fa-solid fa-graduation-cap me-2"></i> Education
-          </h3>
-
-          <div class="row g-4 justify-content-center">
-            <!-- MBA Card -->
+          <!-- Info Cards -->
+          <div class="row g-4">
             <div class="col-md-4">
-              <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[0]">
-                <i class="fa-solid fa-user-tie fa-2x text-warning mb-3"></i>
-                <h5 class="fw-bold text-white">MBA (Pursuing)</h5>
-                <p class="text-secondary mb-1">
-                  Prestige Institute of Management & Research, Gwalior
+              <div class="about-card p-4 text-center">
+                <div class="icon mb-3"><i class="fa-solid fa-user fa-2x text-warning"></i></div>
+                <h5 class="fw-bold text-white">Who I Am</h5>
+                <p class="text-secondary mt-2">
+                  I’m <strong class="text-warning">Amanat Singh Bhadouriya</strong>, a Full Stack
+                  Developer passionate about designing creative and functional web experiences.
                 </p>
-                <p class="text-muted small">2025 – 2027</p>
-
-                <div class="edu-content">
-                  <p class="text-light small">
-                    {{
-                      expandedCards[0]
-                        ? 'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.'
-                        : trimText(
-                            'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.',
-                            85
-                          )
-                    }}
-                  </p>
-                </div>
-
-                <button
-                  class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
-                  (click)="toggleCard(0)"
-                >
-                  {{ expandedCards[0] ? 'Show Less' : 'Show More' }}
-                </button>
               </div>
             </div>
 
-            <!-- Bootcamp Card -->
             <div class="col-md-4">
-              <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[1]">
-                <i class="fa-solid fa-laptop-code fa-2x text-warning mb-3"></i>
-                <h5 class="fw-bold text-white">Full Stack Web Development Bootcamp</h5>
-                <p class="text-secondary mb-1">Internshala, Online</p>
-                <p class="text-muted small">2023 – 2025</p>
-
-                <div class="edu-content">
-                  <!-- Always show first line (trimmed when collapsed) -->
-                  <ul class="text-light small text-start">
-                    <li>
-                      {{
-                        expandedCards[1]
-                          ? 'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.'
-                          : trimText(
-                              'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.',
-                              70
-                            )
-                      }}
-                    </li>
-
-                    <!-- Show these ONLY when expanded -->
-                    <li *ngIf="expandedCards[1]">
-                      Built real-world projects like e-commerce, task manager, weather, and chat
-                      apps.
-                    </li>
-                    <li *ngIf="expandedCards[1]">
-                      Developed RESTful APIs and responsive UI using Bootstrap & Tailwind CSS.
-                    </li>
-                    <li *ngIf="expandedCards[1]">
-                      Worked with Git/GitHub and deployed apps on Render & Netlify.
-                    </li>
-                  </ul>
+              <div class="about-card p-4 text-center">
+                <div class="icon mb-3">
+                  <i class="fa-solid fa-laptop-code fa-2x text-warning"></i>
                 </div>
-
-                <button
-                  class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
-                  (click)="toggleCard(1)"
-                >
-                  {{ expandedCards[1] ? 'Show Less' : 'Show More' }}
-                </button>
+                <h5 class="fw-bold text-white">What I Do</h5>
+                <p class="text-secondary mt-2">
+                  I work with <strong>Angular, React, Node.js</strong>, and
+                  <strong>MongoDB</strong> to develop fast, scalable, and user-focused applications.
+                </p>
               </div>
             </div>
 
-            <!-- B.Sc Card -->
             <div class="col-md-4">
-              <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[2]">
-                <i class="fa-solid fa-building-columns fa-2x text-warning mb-3"></i>
-                <h5 class="fw-bold text-white">B.Sc in Computer Science</h5>
-                <p class="text-secondary mb-1">Jiwaji University, Gwalior</p>
-                <p class="text-muted small">2019 – 2022</p>
-
-                <div class="edu-content">
-                  <p class="text-light small">
-                    {{
-                      expandedCards[2]
-                        ? 'Focused on programming fundamentals, database management, and software development principles.'
-                        : trimText(
-                            'Focused on programming fundamentals, database management, and software development principles.',
-                            90
-                          )
-                    }}
-                  </p>
-                </div>
-
-                <button
-                  class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
-                  (click)="toggleCard(2)"
-                >
-                  {{ expandedCards[2] ? 'Show Less' : 'Show More' }}
-                </button>
+              <div class="about-card p-4 text-center">
+                <div class="icon mb-3"><i class="fa-solid fa-bullseye fa-2x text-warning"></i></div>
+                <h5 class="fw-bold text-white">My Goal</h5>
+                <p class="text-secondary mt-2">
+                  To build a rewarding career in software development and continuously grow through
+                  learning and innovation.
+                </p>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Experience Section -->
-        <div class="experience-section mt-5">
-          <h3 class="text-warning fw-bold text-center mb-4">
-            <i class="fa-solid fa-briefcase me-2"></i> Experience
-          </h3>
+          <!-- Skills Icons Row -->
+          <div class="skills-icons text-center mt-5">
+            <h4 class="text-warning mb-4">
+              <i class="fa-solid fa-code me-2"></i> Technical Skills
+            </h4>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+              <div class="skill-icon">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-angular"></i>
+                <p>Angular</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-react"></i>
+                <p>React</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-node-js"></i>
+                <p>Node.js</p>
+              </div>
 
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="exp-card p-4 mb-4">
-                <h5 class="text-warning mb-2">Frontend Developer Intern – TechNova Solutions</h5>
-                <p class="text-secondary mb-1">Jan 2024 – Jun 2024</p>
-                <ul class="text-light small">
-                  <li>Developed and optimized responsive UI using Angular and Bootstrap.</li>
-                  <li>Collaborated with backend developers to integrate RESTful APIs.</li>
-                  <li>Improved page load time by 30% through code refactoring and lazy loading.</li>
-                  <li><strong>Technologies:</strong> Angular 17, TypeScript, Bootstrap 5, Git</li>
-                </ul>
+              <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+                <p>MySQL</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill-icon">
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="exp-card p-4">
-                <h5 class="text-warning mb-2">Freelance Web Developer</h5>
-                <p class="text-secondary mb-1">Remote | 2023 – Present</p>
-                <ul class="text-light small">
-                  <li>Delivered multiple responsive business websites for small enterprises.</li>
-                  <li>Worked directly with clients to design, develop, and deploy applications.</li>
-                  <li>
-                    Focused on SEO optimization, accessibility, and cross-browser compatibility.
-                  </li>
-                  <li><strong>Technologies:</strong> React.js, Node.js, MongoDB, Bootstrap</li>
-                </ul>
-              </div>
-            </div>
           </div>
-        </div>
 
-        <!-- Certificate Section -->
-        <div class="certificate-section mt-5">
-          <h3 class="text-warning fw-bold text-center mb-4">
-            <i class="fa-solid fa-award me-2"></i> Certificates
-          </h3>
-          <div class="row g-4 justify-content-center">
-            <div class="col-md-3 col-6">
-              <div class="cert-img-card position-relative">
-                <img
-                  src="Internshala-Trainings-11-17-2025_10_33_PM.png"
-                  alt="Full Stack Certificate"
-                  class="img-fluid rounded shadow"
-                />
-                <div class="cert-overlay">
-                  <a
-                    href="https://trainings.internshala.com/certificate/view/nsdc/blxnze3k4jm/dha12verb2s/"
-                    target="_blank"
-                    class="btn btn-warning btn-sm fw-bold"
-                    >View</a
-                  >
-                </div>
-              </div>
-              <p class="text-center text-secondary mt-2">
-                Full Stack Web Development – Internshala
-              </p>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="cert-img-card position-relative">
-                <img
-                  src="internship ubitech.jpg"
-                  alt="JavaScript Mastery"
-                  class="img-fluid rounded shadow"
-                />
-                <div class="cert-overlay">
-                  <a
-                    href="https://drive.google.com/file/d/your-pdf-id/view"
-                    target="_blank"
-                    class="btn btn-warning btn-sm fw-bold"
-                    >View</a
-                  >
-                </div>
-              </div>
-              <p class="text-center text-secondary mt-2">Web Development – Ubitech Solutions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Hire Me -->
-  <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-    <div class="portfolio-section" id="portfolio">
-      <h2 class="text-warning fw-bold text-center mb-4">
-        <i class="fa-solid fa-briefcase me-2"></i> My Portfolio
-      </h2>
-
-      <p class="text-center text-light mb-5 px-3">
-        Here are some of the real-world projects I built using modern frontend & backend
-        technologies. I love creating clean, responsive, and functional web applications.
-      </p>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Project 1 -->
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <img src="assets/portfolio/ecommerce.jpg" class="project-img" alt="" />
-            <h5 class="text-white mt-3">E-Commerce Website</h5>
-            <p class="text-secondary small">
-              Full-stack e-commerce app with cart, auth, admin panel & payment integration.
-            </p>
-
-            <div class="d-flex justify-content-between mt-3">
-              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
-              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <img src="assets/portfolio/taskapp.jpg" class="project-img" alt="" />
-            <h5 class="text-white mt-3">Task Manager App</h5>
-            <p class="text-secondary small">
-              MERN-based task management app with user login & cloud sync.
-            </p>
-
-            <div class="d-flex justify-content-between mt-3">
-              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
-              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="col-md-4">
-          <div class="project-card p-3">
-            <img src="assets/portfolio/weatherapp.jpg" class="project-img" alt="" />
-            <h5 class="text-white mt-3">Weather App</h5>
-            <p class="text-secondary small">
-              API-based weather forecasting app built with Angular & Bootstrap.
-            </p>
-
-            <div class="d-flex justify-content-between mt-3">
-              <a class="btn btn-warning btn-sm" target="_blank">Live Demo</a>
-              <a class="btn btn-outline-warning btn-sm" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Hire Me -->
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-    <div class="contact-section" id="contact">
-      <h2 class="text-warning fw-bold text-center mb-4">
-        <i class="fa-solid fa-envelope-open-text me-2"></i> Contact Me
-      </h2>
-
-      <p class="text-center text-light mb-5 px-3 intro-text">
-        I love connecting with new people! Whether you have a project, an idea, or just want to say
-        hello — feel free to reach out. I'm always open to opportunities.
-      </p>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Email -->
-        <div class="col-md-3">
-          <div class="contact-card text-center p-4">
-            <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
-            <h5 class="text-white">Email</h5>
-            <p class="text-secondary small">amanatsingh872001@gmail.com</p>
-            <a
-              href="mailto:amanatsingh872001@gmail.com"
-              class="btn btn-outline-warning btn-sm mt-2"
-            >
-              Send Mail
+          <!-- Scroll Down Arrow -->
+          <div class="scroll-down text-center mt-5">
+            <a href="#education" class="scroll-link text-warning">
+              <i class="fa-solid fa-angles-down"></i>
             </a>
           </div>
-        </div>
 
-        <!-- Phone -->
-        <div class="col-md-3">
-          <div class="contact-card text-center p-4">
-            <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
-            <h5 class="text-white">Phone</h5>
-            <p class="text-secondary small">+91 8839167579</p>
-            <a href="tel:+919876543210" class="btn btn-outline-warning btn-sm mt-2"> Call Me </a>
+          <!-- Education Section -->
+          <div class="education-section mt-5" id="education">
+            <h3 class="text-warning fw-bold text-center mb-4">
+              <i class="fa-solid fa-graduation-cap me-2"></i> Education
+            </h3>
+
+            <div class="row g-4 justify-content-center">
+              <!-- MBA Card -->
+              <div class="col-md-4">
+                <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[0]">
+                  <i class="fa-solid fa-user-tie fa-2x text-warning mb-3"></i>
+                  <h5 class="fw-bold text-white">MBA (Pursuing)</h5>
+                  <p class="text-secondary mb-1">
+                    Prestige Institute of Management & Research, Gwalior
+                  </p>
+                  <p class="text-muted small">2025 – 2027</p>
+
+                  <div class="edu-content">
+                    <p class="text-light small">
+                      {{
+                        expandedCards[0]
+                          ? 'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.'
+                          : trimText(
+                              'Specializing in management and leadership with focus on business strategy, innovation, and data-driven decision making.',
+                              85
+                            )
+                      }}
+                    </p>
+                  </div>
+
+                  <button
+                    class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
+                    (click)="toggleCard(0)"
+                  >
+                    {{ expandedCards[0] ? 'Show Less' : 'Show More' }}
+                  </button>
+                </div>
+              </div>
+
+              <!-- Bootcamp Card -->
+              <div class="col-md-4">
+                <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[1]">
+                  <i class="fa-solid fa-laptop-code fa-2x text-warning mb-3"></i>
+                  <h5 class="fw-bold text-white">Full Stack Web Development Bootcamp</h5>
+                  <p class="text-secondary mb-1">Internshala, Online</p>
+                  <p class="text-muted small">2023 – 2025</p>
+
+                  <div class="edu-content">
+                    <!-- Always show first line (trimmed when collapsed) -->
+                    <ul class="text-light small text-start">
+                      <li>
+                        {{
+                          expandedCards[1]
+                            ? 'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.'
+                            : trimText(
+                                'Learnt HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB.',
+                                70
+                              )
+                        }}
+                      </li>
+
+                      <!-- Show these ONLY when expanded -->
+                      <li *ngIf="expandedCards[1]">
+                        Built real-world projects like e-commerce, task manager, weather, and chat
+                        apps.
+                      </li>
+                      <li *ngIf="expandedCards[1]">
+                        Developed RESTful APIs and responsive UI using Bootstrap & Tailwind CSS.
+                      </li>
+                      <li *ngIf="expandedCards[1]">
+                        Worked with Git/GitHub and deployed apps on Render & Netlify.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
+                    (click)="toggleCard(1)"
+                  >
+                    {{ expandedCards[1] ? 'Show Less' : 'Show More' }}
+                  </button>
+                </div>
+              </div>
+
+              <!-- B.Sc Card -->
+              <div class="col-md-4">
+                <div class="edu-card p-4 text-center" [class.expanded]="expandedCards[2]">
+                  <i class="fa-solid fa-building-columns fa-2x text-warning mb-3"></i>
+                  <h5 class="fw-bold text-white">B.Sc in Computer Science</h5>
+                  <p class="text-secondary mb-1">Jiwaji University, Gwalior</p>
+                  <p class="text-muted small">2019 – 2022</p>
+
+                  <div class="edu-content">
+                    <p class="text-light small">
+                      {{
+                        expandedCards[2]
+                          ? 'Focused on programming fundamentals, database management, and software development principles.'
+                          : trimText(
+                              'Focused on programming fundamentals, database management, and software development principles.',
+                              90
+                            )
+                      }}
+                    </p>
+                  </div>
+
+                  <button
+                    class="btn btn-outline-warning btn-sm mt-3 toggle-btn"
+                    (click)="toggleCard(2)"
+                  >
+                    {{ expandedCards[2] ? 'Show Less' : 'Show More' }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Section -->
+          <div class="experience-section mt-5">
+            <h3 class="text-warning fw-bold text-center mb-4">
+              <i class="fa-solid fa-briefcase me-2"></i> Experience
+            </h3>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="exp-card p-4 mb-4">
+                  <h5 class="text-warning mb-2">Frontend Developer Intern – TechNova Solutions</h5>
+                  <p class="text-secondary mb-1">Jan 2024 – Jun 2024</p>
+                  <ul class="text-light small">
+                    <li>Developed and optimized responsive UI using Angular and Bootstrap.</li>
+                    <li>Collaborated with backend developers to integrate RESTful APIs.</li>
+                    <li>
+                      Improved page load time by 30% through code refactoring and lazy loading.
+                    </li>
+                    <li><strong>Technologies:</strong> Angular 17, TypeScript, Bootstrap 5, Git</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="exp-card p-4">
+                  <h5 class="text-warning mb-2">Freelance Web Developer</h5>
+                  <p class="text-secondary mb-1">Remote | 2023 – Present</p>
+                  <ul class="text-light small">
+                    <li>Delivered multiple responsive business websites for small enterprises.</li>
+                    <li>
+                      Worked directly with clients to design, develop, and deploy applications.
+                    </li>
+                    <li>
+                      Focused on SEO optimization, accessibility, and cross-browser compatibility.
+                    </li>
+                    <li><strong>Technologies:</strong> React.js, Node.js, MongoDB, Bootstrap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate Section -->
+          <div class="certificate-section mt-5">
+            <h3 class="text-warning fw-bold text-center mb-4">
+              <i class="fa-solid fa-award me-2"></i> Certificates
+            </h3>
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-3 col-6">
+                <div class="cert-img-card position-relative">
+                  <img
+                    src="Internshala-Trainings-11-17-2025_10_33_PM.png"
+                    alt="Full Stack Certificate"
+                    class="img-fluid rounded shadow"
+                  />
+                  <div class="cert-overlay">
+                    <a
+                      href="https://trainings.internshala.com/certificate/view/nsdc/blxnze3k4jm/dha12verb2s/"
+                      target="_blank"
+                      class="btn btn-warning btn-sm fw-bold"
+                      >View</a
+                    >
+                  </div>
+                </div>
+                <p class="text-center text-secondary mt-2">
+                  Full Stack Web Development – Internshala
+                </p>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="cert-img-card position-relative">
+                  <img
+                    src="internship ubitech.jpg"
+                    alt="JavaScript Mastery"
+                    class="img-fluid rounded shadow"
+                  />
+                  <div class="cert-overlay">
+                    <a
+                      href="https://drive.google.com/file/d/1JOdgRIadXSLCbpds4h3JTgRTvIEW0b6S/view?usp=sharing"
+                      target="_blank"
+                      class="btn btn-warning btn-sm fw-bold"
+                      >View</a
+                    >
+                  </div>
+                </div>
+                <p class="text-center text-secondary mt-2">Web Development – Ubitech Solutions</p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <!-- Location -->
-        <div class="col-md-3">
-          <div class="contact-card text-center p-4">
-            <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
-            <h5 class="text-white">Location</h5>
-            <p class="text-secondary small">Gwalior, India</p>
-            <a class="btn btn-outline-warning btn-sm mt-2" target="_blank"> View Map </a>
+    <!-- Hire Me -->
+    <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+      <div class="portfolio-section px-5" id="portfolio">
+        <h2 class="text-warning fw-bold text-center mb-4">
+          <i class="fa-solid fa-briefcase me-2"></i> My Portfolio
+        </h2>
+
+        <p class="text-center text-light mb-5 px-3">
+          Here are some of the real-world projects I built using modern frontend & backend
+          technologies. I love creating clean, responsive, and functional web applications.
+        </p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4" *ngFor="let project of projects; let i = index">
+            <div class="project-card p-3">
+              <img [src]="project.img" class="project-img" alt="Project" />
+
+              <h5 class="text-white mt-3">{{ project.title }}</h5>
+
+              <!-- Bullet Description -->
+              <ul class="text-secondary small mt-2">
+                <li
+                  *ngFor="
+                    let point of expandedProjects[i] ? project.desc : project.desc.slice(0, 1)
+                  "
+                >
+                  {{ point }}
+                </li>
+              </ul>
+
+              <div class="d-flex justify-content-between mt-2">
+                <a class="btn btn-outline-warning btn-sm" (click)="toggleProject(i)">
+                  {{ expandedProjects[i] ? 'Show Less' : 'Show More' }}
+                </a>
+
+                <a
+                  *ngIf="project.live"
+                  class="btn btn-warning btn-sm"
+                  [href]="project.live"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+
+                <a class="btn btn-outline-warning btn-sm" [href]="project.github" target="_blank">
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Social Icons -->
-      <div class="social-icons text-center mt-5">
-        <a class="social-icon" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a class="social-icon" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a class="social-icon" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+    <!-- Hire Me -->
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="contact-section" id="contact">
+        <h2 class="text-warning fw-bold text-center mb-4">
+          <i class="fa-solid fa-envelope-open-text me-2"></i> Contact Me
+        </h2>
+
+        <p class="text-center text-light mb-5 px-3 intro-text">
+          I love connecting with new people! Whether you have a project, an idea, or just want to
+          say hello — feel free to reach out. I'm always open to opportunities.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Email -->
+          <div class="col-md-3">
+            <div class="contact-card text-center p-4">
+              <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
+              <h5 class="text-white">Email</h5>
+              <p class="text-secondary small">amanatsingh872001@gmail.com</p>
+              <a
+                href="mailto:amanatsingh872001@gmail.com"
+                class="btn btn-outline-warning btn-sm mt-2"
+              >
+                Send Mail
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="col-md-3">
+            <div class="contact-card text-center p-4">
+              <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
+              <h5 class="text-white">Phone</h5>
+              <p class="text-secondary small">+91 8839167579</p>
+              <a href="tel:+919876543210" class="btn btn-outline-warning btn-sm mt-2"> Call Me </a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-3">
+            <div class="contact-card text-center p-4">
+              <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
+              <h5 class="text-white">Location</h5>
+              <p class="text-secondary small">Gwalior, India</p>
+              <a class="btn btn-outline-warning btn-sm mt-2" target="_blank"> View Map </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <footer class="custom-footer mt-5">
     <div class="container text-center py-3">
-      <h6 class="footer-title mb-1">"Turning ideas into interactive realities with MongoDB, Express, React, and Node.js — one line of code at a time."</h6>
+      <h6 class="footer-title mb-1">
+        "Turning ideas into interactive realities with MongoDB, Express, React, and Node.js — one
+        line of code at a time."
+      </h6>
 
       <div class="footer-social">
-        <a href="#" class="footer-icon"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="footer-icon"><i class="fa-brands fa-github"></i></a>
-        <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="footer-icon"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/amanat-singh-bhadouriya-b070b5261/" class="footer-icon"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Amanat038" class="footer-icon"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="mailto:amanatsingh872001@gmail.com" class="footer-icon"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
       </div>
     </div>
   </footer>
