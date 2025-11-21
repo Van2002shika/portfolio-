@@ -667,3 +667,85 @@ html {
   color: #ff6f00;
   font-weight: 600;
 }
+.portfolioproject {
+  display: flex;
+}
+/* ===========================
+   MOBILE RESPONSIVE FIXES
+   =========================== */
+
+/* Sidebar shrinks on mobile */
+@media (max-width: 768px) {
+  .nav-tabs {
+    width: 55px;
+  }
+
+  .main-content,
+  .tab-content {
+    margin-left: 55px;
+    padding: 1rem;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+  .profile-card {
+    flex-direction: column !important;
+    width: 95%;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    padding: 1.5rem !important;
+  }
+
+  .photo-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .right-section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* About Cards grid fix */
+@media (max-width: 768px) {
+  .about-card {
+    margin-bottom: 15px;
+  }
+
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.4rem;
+  }
+
+  .edu-card {
+    height: auto !important;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+  .contact-card {
+    margin-bottom: 20px;
+  }
+  .footer-social {
+    gap: 15px;
+  }
+
+  .footer-icon {
+    font-size: 1.3rem;
+  }
+  .portfolioproject {
+    display: block;
+  }
+}
