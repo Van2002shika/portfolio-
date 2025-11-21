@@ -745,6 +745,8 @@ html {
   .footer-icon {
     font-size: 1.3rem;
   }
+}
+@media (max-width: 1430px) {
   .portfolioproject {
     display: block;
   }
