@@ -44,7 +44,6 @@ export class App {
   toggleCard(i: number) {
     this.expandedCards[i] = !this.expandedCards[i];
   }
-
   expandedProjects: boolean[] = [];
   projects = [
     {
