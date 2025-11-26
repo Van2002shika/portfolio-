@@ -5,6 +5,9 @@ html {
   overflow-x: hidden;
 }
 
+.text-warning {
+  color: #be2fed !important;
+}
 /* Sidebar (centered vertically, icons only) */
 .sidebar {
   position: fixed;
@@ -33,13 +36,13 @@ html {
 }
 
 .nav-icon:hover {
-  color: #ff6f00;
+  color: #be2fed;
   transform: scale(1.2);
 }
 
 .nav-icon.active {
-  color: #ff6f00;
-  border-left: 3px solid #ff6f00;
+  color: #be2fed;
+  border-left: 3px solid #be2fed;
 }
 
 /* Main Content */
@@ -105,7 +108,8 @@ html {
 
 .left-section {
   flex: 1;
-  background: linear-gradient(180deg, #ff4500, #ff6f00);
+  background: #be2fed;
+  background: linear-gradient(90deg, rgba(190, 47, 237, 1) 42%, rgba(28, 2, 120, 1) 96%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,8 +118,8 @@ html {
 }
 
 .photo-wrapper {
-  width: 230px;
-  height: 230px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   background-color: #000000;
   overflow: hidden;
@@ -146,32 +150,32 @@ html {
 }
 
 .btn-warning {
-  background-color: #ff6f00;
+  background-color: #be2fed;
   border: none;
   border-radius: 25px;
   padding: 10px 25px;
 }
 
 .btn-outline-warning {
-  border: 2px solid #ff6f00;
+  border: 2px solid #be2fed;
   border-radius: 25px;
-  color: #ff6f00;
+  color: #be2fed;
   padding: 10px 25px;
 }
 
 .btn-outline-warning:hover {
-  background-color: #ff6f00;
+  background-color: #be2fed;
   color: #000;
 }
 
 /* Typewriter Effect */
 .typewriter {
   display: inline-block;
-  border-right: 3px solid #ff6f00;
+  border-right: 3px solid #be2fed;
   white-space: nowrap;
   overflow: hidden;
   animation: blink 0.8s step-end infinite;
-  color: #ff6f00;
+  color: #be2fed;
 }
 
 @keyframes blink {
@@ -216,13 +220,13 @@ html {
 
 /* Hover and active effects */
 .nav-tabs .nav-link:hover {
-  color: #ff6f00;
+  color: #be2fed;
   transform: scale(1.2);
 }
 
 .nav-tabs .nav-link.active {
-  color: #ff6f00;
-  border-left: 3px solid #ff6f00;
+  color: #be2fed;
+  border-left: 3px solid #be2fed;
 }
 
 /* Remove focus outline */
@@ -257,7 +261,7 @@ html {
 
 /* Example: Add orange highlight line on hover */
 .nav-tabs .nav-link:hover i {
-  text-shadow: 0 0 10px #ff6f00;
+  text-shadow: 0 0 10px #be2fed;
 }
 /* About Section Background */
 .about-section {
@@ -281,14 +285,14 @@ html {
   background-color: rgba(26, 26, 26, 0.85);
   border-radius: 15px;
   transition: 0.3s ease;
-  border: 1px solid rgba(255, 111, 0, 0.1);
+  border: 1px solid #be2fed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .about-card:hover {
   transform: translateY(-8px);
-  border-color: #ff6f00;
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.5);
+  border-color: #be2fed;
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 
 /* Skill Cards */
@@ -301,8 +305,8 @@ html {
 }
 
 .skill-card:hover {
-  background-color: rgba(255, 111, 0, 0.15);
-  border-color: #ff6f00;
+  background-color: #be2fed;
+  border-color: #be2fed;
   transform: scale(1.05);
   color: #fff;
 }
@@ -329,33 +333,33 @@ html {
   background: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
   transition: 0.3s ease;
-  border: 1px solid rgba(255, 111, 0, 0.2);
+  border: 1px solid rgb(91, 2, 120);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 .edu-card:hover {
   transform: translateY(-8px);
-  border-color: #ff6f00;
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.6);
+  border-color: #be2fed;
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 
 /* Experience Cards */
 .exp-card {
   background: rgba(26, 26, 26, 0.9);
   border-radius: 12px;
-  border: 1px solid rgba(255, 111, 0, 0.2);
+  border: 1px solid #be2fed;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease;
 }
 .exp-card:hover {
-  border-color: #ff6f00;
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.5);
+  border-color: #be2fed;
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 
 /* Certificates */
 .cert-img-card {
   overflow: hidden;
   border-radius: 12px;
-  border: 2px solid rgba(255, 111, 0, 0.2);
+  border: 2px solid #be2fed;
   transition: 0.3s ease;
   height: 200px;
 }
@@ -412,9 +416,9 @@ html {
   font-size: 1.8rem;
 }
 .skill-icon:hover {
-  color: #ff6f00;
-  border-color: #ff6f00;
-  box-shadow: 0 0 15px rgba(255, 111, 0, 0.5);
+  color: #be2fed;
+  border-color: #be2fed;
+  box-shadow: 0 0 15px rgb(91, 2, 120);
   transform: scale(1.1);
 }
 .skill-icon p {
@@ -437,7 +441,7 @@ html {
 
 .scroll-link {
   font-size: 2.2rem;
-  color: #ff6f00;
+  color: #be2fed;
   text-decoration: none;
   display: inline-block;
   animation: jumpArrow 1.4s infinite ease-in-out;
@@ -472,7 +476,7 @@ html {
 .edu-card {
   background: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
-  border: 1px solid rgba(255, 111, 0, 0.25);
+  border: 1px solid rgb(91, 2, 120);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   height: 330px;
   overflow: hidden;
@@ -481,7 +485,7 @@ html {
 
 .edu-card.expanded {
   height: auto;
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.6);
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 
 .edu-content {
@@ -502,9 +506,9 @@ html {
 }
 
 .toggle-btn:hover {
-  background-color: #ff6f00;
+  background-color: #be2fed;
   color: #000;
-  border-color: #ff6f00;
+  border-color: #be2fed;
 }
 
 .portfolio-section {
@@ -516,15 +520,15 @@ html {
 .project-card {
   background: rgba(25, 25, 25, 0.85);
   border-radius: 15px;
-  border: 1px solid rgba(255, 111, 0, 0.15);
+  border: 1px solid #be2fed;
   transition: 0.3s ease;
   cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  border-color: #ff6f00;
-  box-shadow: 0 0 20px rgba(255, 111, 0, 0.5);
+  border-color: #be2fed;
+  box-shadow: 0 0 20px rgb(91, 2, 120);
 }
 
 .project-img {
@@ -536,25 +540,25 @@ html {
 
 /* Buttons */
 .btn-warning {
-  background-color: #ff6f00 !important;
+  background-color: #be2fed !important;
   border: none;
 }
 
 .btn-outline-warning:hover {
-  background-color: #ff6f00;
+  background-color: #be2fed;
   color: #000 !important;
 }
 
 /* Hire Me Banner */
 .hire-banner {
-  background: rgba(255, 111, 0, 0.1);
+  background: #be2fed;
   border-radius: 20px;
-  border: 1px solid rgba(255, 111, 0, 0.3);
+  border: 1px solid rgb(91, 2, 120);
   transition: 0.3s ease;
 }
 
 .hire-banner:hover {
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.4);
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 .contact-section {
   padding: 30px 0;
@@ -566,14 +570,14 @@ html {
 .contact-card {
   background: rgba(25, 25, 25, 0.85);
   border-radius: 15px;
-  border: 1px solid rgba(255, 111, 0, 0.15);
+  border: 1px solid rgb(91, 2, 120);
   transition: 0.3s ease;
 }
 
 .contact-card:hover {
   transform: translateY(-10px);
-  border-color: #ff6f00;
-  box-shadow: 0 0 20px rgba(255, 111, 0, 0.5);
+  border-color: #be2fed;
+  box-shadow: 0 0 20px rgb(91, 2, 120);
 }
 
 /* Text animation */
@@ -600,7 +604,7 @@ html {
 
 .social-icon {
   font-size: 2rem;
-  color: #ff6f00;
+  color: #be2fed;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -608,34 +612,34 @@ html {
 .social-icon:hover {
   color: #ffffff;
   transform: scale(1.2);
-  text-shadow: 0 0 15px #ff6f00;
+  text-shadow: 0 0 15px #be2fed;
 }
 
 /* Hire Me Banner */
 .hire-banner {
-  background: rgba(255, 111, 0, 0.1);
+  background: #be2fed;
   border-radius: 20px;
-  border: 1px solid rgba(255, 111, 0, 0.3);
+  border: 1px solid rgb(91, 2, 120);
   transition: 0.3s ease;
 }
 
 .hire-banner:hover {
-  box-shadow: 0 0 25px rgba(255, 111, 0, 0.4);
+  box-shadow: 0 0 25px rgb(91, 2, 120);
 }
 
 .btn-warning {
-  background-color: #ff6f00 !important;
+  background-color: #be2fed !important;
   border: none;
 }
 /* Footer */
 .custom-footer {
   background: #000000;
-  border-top: 1px solid rgba(255, 111, 0, 0.3);
+  border-top: 1px solid rgb(91, 2, 120);
   box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
 }
 
 .footer-title {
-  color: #ff6f00;
+  color: #be2fed;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -653,9 +657,9 @@ html {
 }
 
 .footer-icon:hover {
-  color: #ff6f00;
+  color: #be2fed;
   transform: scale(1.2);
-  text-shadow: 0 0 12px rgba(255, 111, 0, 0.7);
+  text-shadow: 0 0 12px #be2fed;
 }
 
 .footer-copy {
@@ -664,7 +668,7 @@ html {
 }
 
 .footer-copy .brand {
-  color: #ff6f00;
+  color: #be2fed;
   font-weight: 600;
 }
 .portfolioproject {

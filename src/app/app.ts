@@ -49,6 +49,7 @@ export class App {
     {
       title: 'Twitter Clone',
       img: 'twitter_newbird_boxed_whiteonblue.webp',
+      col: 'col-lg-6',
       desc: [
         'A Twitter-style social platform built with React.js.',
         'Real-time posts, likes, and comments.',
@@ -60,6 +61,7 @@ export class App {
     {
       title: 'Task Manager App',
       img: 'Screenshot 2025-11-21 213800.png',
+      col: 'col-lg-4',
       desc: [
         'Built using React.js and react-beautiful-dnd.',
         'Drag-and-drop task management.',
@@ -70,8 +72,16 @@ export class App {
     },
 
     {
+      title: 'Insta Clone',
+      img: 'OIP.jpg',
+      col: 'col-lg-3',
+      desc: ['Built using React.js ', 'Express.js backend and responsive UI.'],
+      github: 'https://github.com/Amanat038',
+    },
+    {
       title: 'Real-Time Chat Application',
       img: 'Screenshot 2025-11-21 213836.png',
+      col: 'col-lg-7',
       desc: [
         'Built using React.js + Socket.IO.',
         'Real-time chatting with multi-user rooms.',
