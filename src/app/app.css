@@ -6,7 +6,7 @@ html {
 }
 
 .text-warning {
-  color: #be2fed !important;
+  color: #2fa7ed !important;
 }
 /* Sidebar (centered vertically, icons only) */
 .sidebar {
@@ -36,13 +36,13 @@ html {
 }
 
 .nav-icon:hover {
-  color: #be2fed;
+  color: #2fa7ed;
   transform: scale(1.2);
 }
 
 .nav-icon.active {
-  color: #be2fed;
-  border-left: 3px solid #be2fed;
+  color: #2fa7ed;
+  border-left: 3px solid #2fa7ed;
 }
 
 /* Main Content */
@@ -108,8 +108,8 @@ html {
 
 .left-section {
   flex: 1;
-  background: #be2fed;
-  background: linear-gradient(90deg, rgba(190, 47, 237, 1) 42%, rgba(28, 2, 120, 1) 96%);
+  background: #2fa7ed;
+  background: linear-gradient(90deg, rgba(47, 167, 237, 1) 42%, rgba(28, 2, 120, 1) 96%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,32 +150,32 @@ html {
 }
 
 .btn-warning {
-  background-color: #be2fed;
+  background-color: #2fa7ed;
   border: none;
   border-radius: 25px;
   padding: 10px 25px;
 }
 
 .btn-outline-warning {
-  border: 2px solid #be2fed;
+  border: 2px solid #2fa7ed;
   border-radius: 25px;
-  color: #be2fed;
+  color: #2fa7ed;
   padding: 10px 25px;
 }
 
 .btn-outline-warning:hover {
-  background-color: #be2fed;
+  background-color: #2fa7ed;
   color: #000;
 }
 
 /* Typewriter Effect */
 .typewriter {
   display: inline-block;
-  border-right: 3px solid #be2fed;
+  border-right: 3px solid #2fa7ed;
   white-space: nowrap;
   overflow: hidden;
   animation: blink 0.8s step-end infinite;
-  color: #be2fed;
+  color: #2fa7ed;
 }
 
 @keyframes blink {
@@ -220,13 +220,13 @@ html {
 
 /* Hover and active effects */
 .nav-tabs .nav-link:hover {
-  color: #be2fed;
+  color: #2fa7ed;
   transform: scale(1.2);
 }
 
 .nav-tabs .nav-link.active {
-  color: #be2fed;
-  border-left: 3px solid #be2fed;
+  color: #2fa7ed;
+  border-left: 3px solid #2fa7ed;
 }
 
 /* Remove focus outline */
@@ -261,7 +261,7 @@ html {
 
 /* Example: Add orange highlight line on hover */
 .nav-tabs .nav-link:hover i {
-  text-shadow: 0 0 10px #be2fed;
+  text-shadow: 0 0 10px #2fa7ed;
 }
 /* About Section Background */
 .about-section {
@@ -285,14 +285,14 @@ html {
   background-color: rgba(26, 26, 26, 0.85);
   border-radius: 15px;
   transition: 0.3s ease;
-  border: 1px solid #be2fed;
+  border: 1px solid #2fa7ed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .about-card:hover {
   transform: translateY(-8px);
-  border-color: #be2fed;
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  border-color: #2fa7ed;
+  box-shadow: 0 0 25px #2fa7ed;
 }
 
 /* Skill Cards */
@@ -305,8 +305,8 @@ html {
 }
 
 .skill-card:hover {
-  background-color: #be2fed;
-  border-color: #be2fed;
+  background-color: #2fa7ed;
+  border-color: #2fa7ed;
   transform: scale(1.05);
   color: #fff;
 }
@@ -333,33 +333,33 @@ html {
   background: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
   transition: 0.3s ease;
-  border: 1px solid rgb(91, 2, 120);
+  border: 1px solid #2fa7ed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 .edu-card:hover {
   transform: translateY(-8px);
-  border-color: #be2fed;
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  border-color: #2fa7ed;
+  box-shadow: 0 0 25px #2fa7ed;
 }
 
 /* Experience Cards */
 .exp-card {
   background: rgba(26, 26, 26, 0.9);
   border-radius: 12px;
-  border: 1px solid #be2fed;
+  border: 1px solid #2fa7ed;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease;
 }
 .exp-card:hover {
-  border-color: #be2fed;
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  border-color: #2fa7ed;
+  box-shadow: 0 0 25px #2fa7ed;
 }
 
 /* Certificates */
 .cert-img-card {
   overflow: hidden;
   border-radius: 12px;
-  border: 2px solid #be2fed;
+  border: 2px solid #2fa7ed;
   transition: 0.3s ease;
   height: 200px;
 }
@@ -416,9 +416,9 @@ html {
   font-size: 1.8rem;
 }
 .skill-icon:hover {
-  color: #be2fed;
-  border-color: #be2fed;
-  box-shadow: 0 0 15px rgb(91, 2, 120);
+  color: #2fa7ed;
+  border-color: #2fa7ed;
+  box-shadow: 0 0 15px #2fa7ed;
   transform: scale(1.1);
 }
 .skill-icon p {
@@ -441,7 +441,7 @@ html {
 
 .scroll-link {
   font-size: 2.2rem;
-  color: #be2fed;
+  color: #2fa7ed;
   text-decoration: none;
   display: inline-block;
   animation: jumpArrow 1.4s infinite ease-in-out;
@@ -476,7 +476,7 @@ html {
 .edu-card {
   background: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
-  border: 1px solid rgb(91, 2, 120);
+  border: 1px solid #2fa7ed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   height: 330px;
   overflow: hidden;
@@ -485,7 +485,7 @@ html {
 
 .edu-card.expanded {
   height: auto;
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  box-shadow: 0 0 25px #2fa7ed;
 }
 
 .edu-content {
@@ -506,9 +506,9 @@ html {
 }
 
 .toggle-btn:hover {
-  background-color: #be2fed;
+  background-color: #2fa7ed;
   color: #000;
-  border-color: #be2fed;
+  border-color: #2fa7ed;
 }
 
 .portfolio-section {
@@ -520,15 +520,15 @@ html {
 .project-card {
   background: rgba(25, 25, 25, 0.85);
   border-radius: 15px;
-  border: 1px solid #be2fed;
+  border: 1px solid #2fa7ed;
   transition: 0.3s ease;
   cursor: pointer;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  border-color: #be2fed;
-  box-shadow: 0 0 20px rgb(91, 2, 120);
+  border-color: #2fa7ed;
+  box-shadow: 0 0 20px #2fa7ed;
 }
 
 .project-img {
@@ -540,25 +540,25 @@ html {
 
 /* Buttons */
 .btn-warning {
-  background-color: #be2fed !important;
+  background-color: #2fa7ed !important;
   border: none;
 }
 
 .btn-outline-warning:hover {
-  background-color: #be2fed;
+  background-color: #2fa7ed;
   color: #000 !important;
 }
 
 /* Hire Me Banner */
 .hire-banner {
-  background: #be2fed;
+  background: #2fa7ed;
   border-radius: 20px;
-  border: 1px solid rgb(91, 2, 120);
+  border: 1px solid #2fa7ed;
   transition: 0.3s ease;
 }
 
 .hire-banner:hover {
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  box-shadow: 0 0 25px #2fa7ed;
 }
 .contact-section {
   padding: 30px 0;
@@ -570,14 +570,14 @@ html {
 .contact-card {
   background: rgba(25, 25, 25, 0.85);
   border-radius: 15px;
-  border: 1px solid rgb(91, 2, 120);
+  border: 1px solid #2fa7ed;
   transition: 0.3s ease;
 }
 
 .contact-card:hover {
   transform: translateY(-10px);
-  border-color: #be2fed;
-  box-shadow: 0 0 20px rgb(91, 2, 120);
+  border-color: #2fa7ed;
+  box-shadow: 0 0 20px #2fa7ed;
 }
 
 /* Text animation */
@@ -604,7 +604,7 @@ html {
 
 .social-icon {
   font-size: 2rem;
-  color: #be2fed;
+  color: #2fa7ed;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -612,34 +612,34 @@ html {
 .social-icon:hover {
   color: #ffffff;
   transform: scale(1.2);
-  text-shadow: 0 0 15px #be2fed;
+  text-shadow: 0 0 15px #2fa7ed;
 }
 
 /* Hire Me Banner */
 .hire-banner {
-  background: #be2fed;
+  background: #2fa7ed;
   border-radius: 20px;
-  border: 1px solid rgb(91, 2, 120);
+  border: 1px solid #2fa7ed;
   transition: 0.3s ease;
 }
 
 .hire-banner:hover {
-  box-shadow: 0 0 25px rgb(91, 2, 120);
+  box-shadow: 0 0 25px #2fa7ed;
 }
 
 .btn-warning {
-  background-color: #be2fed !important;
+  background-color: #2fa7ed !important;
   border: none;
 }
 /* Footer */
 .custom-footer {
   background: #000000;
-  border-top: 1px solid rgb(91, 2, 120);
+  border-top: 1px solid #2fa7ed;
   box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
 }
 
 .footer-title {
-  color: #be2fed;
+  color: #2fa7ed;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -657,9 +657,9 @@ html {
 }
 
 .footer-icon:hover {
-  color: #be2fed;
+  color: #2fa7ed;
   transform: scale(1.2);
-  text-shadow: 0 0 12px #be2fed;
+  text-shadow: 0 0 12px #2fa7ed;
 }
 
 .footer-copy {
@@ -668,7 +668,7 @@ html {
 }
 
 .footer-copy .brand {
-  color: #be2fed;
+  color: #2fa7ed;
   font-weight: 600;
 }
 .portfolioproject {
